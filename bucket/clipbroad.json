@@ -1,0 +1,19 @@
+{
+    "version": "0.1.0",
+    "description": "Share the clipboard between your own machines, peer-to-peer",
+    "homepage": "https://github.com/fcamus00/clipbroad",
+    "license": "MIT|Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fcamus00/clipbroad/releases/download/v0.1.0/clipbroad-v0.1.0-windows-x86_64.zip",
+            "hash": "a0e03d1a21265c8baf664c313c574c1a8ea91841ff4dba2e2e5706a6752bbf04",
+            "extract_dir": "clipbroad-v0.1.0-windows-x86_64"
+        }
+    },
+    "env_add_path": ".",
+    "notes": [
+        "To start clipbroad at login, run: clipbroad service install",
+        "Scoop cannot update clipbroad while it runs. Update with:",
+        "  clipbroad service uninstall; scoop update clipbroad; clipbroad service install"
+    ]
+}

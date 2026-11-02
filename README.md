@@ -1,10 +1,15 @@
 # scoop-bucket
 
-Scoop bucket for [clipbroad](https://github.com/fcamus00/clipbroad). The release workflow of
-clipbroad updates `bucket/clipbroad.json` on every stable release; do not edit it here.
+This bucket is discontinued and no longer receives updates. It stays at clipbroad 0.2.0.
+
+On Windows, install clipbroad with the installer from the
+[latest release](https://github.com/fcamus00/clipbroad/releases/latest).
+
+To move an existing Scoop install to the installer:
 
 ```powershell
-scoop bucket add fcamus00 https://github.com/fcamus00/scoop-bucket
-scoop install fcamus00/clipbroad
-clipbroad service install   # start at login
+clipbroad service uninstall
+scoop uninstall clipbroad
 ```
+
+Then run the installer. Your config and pairings stay in `%LOCALAPPDATA%\clipbroad`.
